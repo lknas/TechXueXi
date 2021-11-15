@@ -1,0 +1,269 @@
+{
+  "name": "4820",
+  "author": "留个名字",
+  "desc": "4820 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
+  "date": "2021-11-15 17:38:11",
+  "list": [
+    {
+      "name": "执行 Shell 指令",
+      "type": "cron",
+      "time": "30 10 0 * * *",
+      "job": {
+        "type": "exec",
+        "target": "node -v"
+      }
+    },
+    {
+      "name": "Python安装(Docker下)",
+      "type": "schedule",
+      "time": "0",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://ghproxy.com/https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/python-install.js"
+      },
+      "running": false
+    },
+    {
+      "name": "test",
+      "type": "schedule",
+      "time": "3",
+      "job": {
+        "type": "runjs",
+        "target": "test.js"
+      },
+      "running": false
+    },
+    {
+      "name": "签到&转盘宝箱&时长",
+      "type": "cron",
+      "time": "10,40 */1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/youth.js"
+      }
+    },
+    {
+      "name": "快速阅读",
+      "type": "cron",
+      "time": "0 10,30,50 */1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/ztxtop/x/main/zqread.js"
+      }
+    },
+    {
+      "name": "看看赚",
+      "type": "cron",
+      "time": "30 6,11,20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/youth_gain.js"
+      }
+    },
+    {
+      "name": "清空日志",
+      "type": "cron",
+      "time": "30 58 23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/deletelog.js"
+      },
+      "running": false
+    },
+    {
+      "name": "软更新升级",
+      "type": "cron",
+      "time": "30 58 21 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/softupdate.js"
+      }
+    },
+    {
+      "name": "重启 elecV2P",
+      "type": "schedule",
+      "time": "0",
+      "job": {
+        "type": "exec",
+        "target": "pm2 restart elecV2P"
+      },
+      "running": false
+    },
+    {
+      "name": "任务添加并执行",
+      "type": "schedule",
+      "time": "10",
+      "job": {
+        "type": "exec",
+        "target": "node -v"
+      },
+      "running": false
+    },
+    {
+      "name": "Shell 指令远程任务",
+      "type": "schedule",
+      "time": "0",
+      "job": {
+        "type": "exec",
+        "target": "python3 https://ghproxy.com/https://raw.githubusercontent.com/elecV2/elecV2P/master/script/Shell/elecV2P-exam.py"
+      },
+      "running": false
+    },
+    {
+      "name": "通过 REWRITE 订阅添加的任务",
+      "type": "cron",
+      "time": "30 0 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/test.js"
+      }
+    },
+    {
+      "name": "新的任务 14",
+      "type": "cron",
+      "time": "40 */2 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/Sunert/Script/master/Task/Youth_Read.js"
+      }
+    },
+    {
+      "name": "新的任务 14",
+      "type": "cron",
+      "time": "20 10 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "111111"
+      },
+      "running": false
+    },
+    {
+      "name": "中青签到",
+      "type": "cron",
+      "time": "15 2 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqqd.js"
+      },
+      "running": false
+    },
+    {
+      "name": "中青文章",
+      "type": "cron",
+      "time": "30 7,12,18 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js"
+      }
+    },
+    {
+      "name": "中青看看赚",
+      "type": "cron",
+      "time": "45 9 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqkkz.js"
+      }
+    },
+    {
+      "name": "中青火爆转发",
+      "type": "cron",
+      "time": "15 6,12,18 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_share.js"
+      }
+    },
+    {
+      "name": "中青福利视频",
+      "type": "cron",
+      "time": "20 21 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_Adv_video.js"
+      }
+    },
+    {
+      "name": "中青每日任务宝箱领取",
+      "type": "cron",
+      "time": "15 22 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqbox.js"
+      }
+    },
+    {
+      "name": "中青每日收益统计",
+      "type": "cron",
+      "time": "15 23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_today_score.js"
+      }
+    },
+    {
+      "name": "中青好友签到红包",
+      "type": "cron",
+      "time": "15 7 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_friendSign.js"
+      }
+    },
+    {
+      "name": "中青抽奖",
+      "type": "cron",
+      "time": "34 22 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_Rotary.js"
+      }
+    },
+    {
+      "name": "中青打卡赚",
+      "type": "cron",
+      "time": "34 5,9 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_wakeup.js"
+      }
+    },
+    {
+      "name": "中青搜索赚",
+      "type": "cron",
+      "time": "35 5 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqssz.js"
+      }
+    },
+    {
+      "name": "中青浏览赚",
+      "type": "cron",
+      "time": "34 6 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqllz.js"
+      }
+    },
+    {
+      "name": "中青阅读翻倍",
+      "type": "cron",
+      "time": "34 5 * * 1",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_double.js"
+      }
+    },
+    {
+      "name": "中青自动提现",
+      "type": "cron",
+      "time": "25 10 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_withdraw.js"
+      },
+      "running": false
+    }
+  ]
+}
